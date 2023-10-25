@@ -3,87 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
-    <title>Mundo verde</title>
+    
+    <title>Mundo Verde</title>
   </head>
   <body>
     <header>
-      <nav class="barra">
-        <img class="logo" src="imagenes\logomundoverde.png" width="5%" alt="logo" />
-        <ul class="barra1">
-          <li><a href="#">INICIO</a></li>
-          <li><a href="#">DESTINOS</a></li>
-          <li><a href="#">CONSEJOS</a></li>
-          <li><a href="#">QUIENES SOMOS</a></li>
-        </ul>
-        <a href="#" class="iniciarsesion"> iniciar sesion</a>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MUNDO VERDE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MUNDO VERDE</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONSEJOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">QUIENES SOMOS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   DESTINOS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">America</a></li>
+                    <li><a class="dropdown-item" href="#">Europa</a></li>
+                    <li><a class="dropdown-item" href="#">Asia</a></li>
+                    <li><a class="dropdown-item" href="#">Africa</a></li>
+                    <li><a class="dropdown-item" href="#">Oceania</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
     <div class="bienve">
       <h1 class="h1">¡Bienvenido a nuestro portal de viajes!</h1>
+      <br>
       <h2 class="H2">
         Explora destinos emocionantes y encuentra consejos para tu proxima
         aventura
       </h2>
     </div>
-    <br>
- 
-    <main>
-      
-      <section >
-        <img src="imagenes\argentinaa.jpg"  alt="Argentina" />
-        <div>
-          <p class="pais1">ARGENTINA</p>
+    <br />
+
+    <main class="paises">
+
+      <section class="cartas">
+        
+        <div class="cartas-div">
+          <img src="imagenes\argentinaa.jpg" alt="Argentina" />
+          <h3 class="pais1">ARGENTINA</h3>
           <p>
             Argentina ofrece una variedad de experiencias únicas, desde la
             animada ciudad de Buenos Aires hasta los impresionantes paisajes de
             la Patagonia y las Cataratas del Iguazú. Este pais es conocido por
             su deliciosa comida , su cultura y su pasión por el fútbol.
           </p>
-          <button><a class="cm1" href="#">CONOCE MAS</a></button>
+          <div class="seccion">
+            <button class="boton"><a class="cm1" href="#">CONOCE MAS</a></button>
+          </div>
         </div>
       </section>
-      
-      <section >
-        <img src="C:\Users\bravo\Downloads\BAM\imagenes\italiaa.jpg"  alt="italia" />
-        <div>
-          <p class="pais2">ITALIA</p>
+
+      <section class="cartas">
+       
+        <div class="cartas-div">
+          <img src="imagenes\italiaa.jpg" alt="italia" />
+          <h3 class="pais2">ITALIA</h3>
           <p class="parrafo">
             Italia es famosa por su rica historia, cultura, arte, comida y
             paisajes impresionantes. Ciudades como Roma, Florencia y Venecia son
             destinos populares, junto con las impresionantes regiones vinícolas
             y la costa Amalfitana.
           </p>
-          <button ><a class="cm1" href="#">CONOCE MAS</a></button>
+        </br>
+          
+          <div class="seccion">
+            <button class="boton"><a class="cm1" href="#">CONOCE MAS</a></button>
+          </div>
         </div>
       </section>
-      <section >
-        <img  src="imagenes\tailandiaa.jpg"  alt="tailandia" />
-        <div>
-          <p class="pais3">TAILANDIA</p>
+
+      <section class="cartas">
+        
+        <div class="cartas-div">
+          <img src="imagenes\tailandiaa.jpg" alt="tailandia" />
+          <h3 class="pais3">TAILANDIA</h3>
           <p>
             Tailandia es conocida por su impresionante belleza natural, playas
             exóticas, templos impresionantes y una deliciosa comida callejera.
             Bangkok, Chiang Mai y las islas como Phuket son destinos muy
             populares.
           </p>
-          <button ><a class="cm1" href="#">CONOCE MAS</a></button>
+         </Br>
+         <div class="seccion">
+          <button class="boton"><a class="cm1" href="#">CONOCE MAS</a></button>
+        </div>
         </div>
       </section>
+
     </main>
+
     <div class="buscador">
       <p class="pregunta">¿A donde te gustaria ir?</p>
-      <input class="buscador1"
-        type="search"
-        placeholder="Busca por pais, ciudad o palabra clave..."
-      /> 
-      </div>
-     <br>
-      <footer>
+      <input class="buscador1" type="search" placeholder="Busca por pais, ciudad o palabra clave..."/>
+    </div>
+
+    <br />
+
+    <footer>
       <ul>
-        <li><a clas="contacto" href="#">contactanos</a></li>
+        <li><a class="contacto" href="#">CONTACTANOS</a></li>
       </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
